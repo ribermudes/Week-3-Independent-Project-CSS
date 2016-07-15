@@ -1,9 +1,13 @@
 .cards-about {
-  float: right;
   display: inline;
-  margin: 1em;
   background-color: $primary-color;
   border-radius: 5px;
+  position: absolute;
+  top: 10em;
+  left: 55em;
+  @media screen and (max-width: $break-medium) {
+  float: none;
+ }
 }
 
 .card-copy {
@@ -11,23 +15,33 @@
 }
 
 h4  {
-  text-align: center;
+  @extend .card-copy;
 }
 
 body {
   font-family: 'Pinyon Script', cursive;
 }
 
-.blog-post {
-  overflow: auto;
-  height: 30em;
-  margin: 1em;
-  border-radius: 5px;
-  -webkit-box-shadow: 17px -3px 46px -15px rgba(0,0,0,0.75);
-  -moz-box-shadow: 17px -3px 46px -15px rgba(0,0,0,0.75);
-  box-shadow: 17px -3px 46px -15px rgba(0,0,0,0.75);
+.card-about2 {
+  float: right;
+  }
+
+
+.blog-post1 {
+  @include blog-post;
 }
 
-.blog-post2 {
-  @include blog-post;
+.card {
+  margin: 0;
+  overflow: auto;
+}
+
+.blog-post1 img {
+  border: none;
+  display: block;
+  margin: 0 auto;
+}
+
+.page-footer {
+  background-color: black !important;
 }

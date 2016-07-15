@@ -5,7 +5,9 @@
   background-position: right;
   background-size: none;
   display: flex;
-  justify-content: center;
-  min-height: 25em;
-  padding: 2em;
+  // justify-content: center;
+}
+
+img {
+  position: relative;
 }

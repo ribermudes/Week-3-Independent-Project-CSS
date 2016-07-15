@@ -51,23 +51,30 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+p {
+  font-size: 20px; }
+
 .cards-about {
-  float: right;
   display: inline;
-  margin: 1em;
   background-color: black;
-  border-radius: 5px; }
+  border-radius: 5px;
+  position: absolute;
+  top: 10em;
+  left: 55em; }
+  @media screen and (max-width: 785px) {
+    .cards-about {
+      float: none; } }
 
-.card-copy {
-  text-align: center; }
-
-h4 {
+.card-copy, h4 {
   text-align: center; }
 
 body {
   font-family: 'Pinyon Script', cursive; }
 
-.blog-post {
+.card-about2 {
+  float: right; }
+
+.blog-post1 {
   overflow: auto;
   height: 30em;
   margin: 1em;
@@ -76,24 +83,27 @@ body {
   -moz-box-shadow: 17px -3px 46px -15px rgba(0, 0, 0, 0.75);
   box-shadow: 17px -3px 46px -15px rgba(0, 0, 0, 0.75); }
 
-.blog-post2 {
-  overflow: auto;
-  height: 30em;
-  margin: 1em;
-  border-radius: 5px;
-  -webkit-box-shadow: 17px -3px 46px -15px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 17px -3px 46px -15px rgba(0, 0, 0, 0.75);
-  box-shadow: 17px -3px 46px -15px rgba(0, 0, 0, 0.75); }
+.card {
+  margin: 0;
+  overflow: auto; }
+
+.blog-post1 img {
+  border: none;
+  display: block;
+  margin: 0 auto; }
+
+.page-footer {
+  background-color: black !important; }
 
 .image-wrapper {
   align-items: center;
   background: image_url("img/EUR05.jpg");
   background-position: right;
   background-size: none;
-  display: flex;
-  justify-content: center;
-  min-height: 25em;
-  padding: 2em; }
+  display: flex; }
+
+img {
+  position: relative; }
 
 .nav-wrapper {
   background-color: black;
