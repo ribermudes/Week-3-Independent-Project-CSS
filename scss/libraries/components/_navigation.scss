@@ -1,0 +1,17 @@
+.nav-wrapper {
+  background-color: $primary-color;
+  padding-left: 2em;
+}
+
+.card {
+    @include flex-basis(20em);
+    @include flex-grow(1);
+    margin: 0 1em;
+    height: 20em;
+    width: 30em;
+  }
+
+  .card-image {
+    background: whitesmoke;
+    overflow: hidden;
+  }

@@ -1,0 +1,33 @@
+.cards-about {
+  float: right;
+  display: inline;
+  margin: 1em;
+  background-color: $primary-color;
+  border-radius: 5px;
+}
+
+.card-copy {
+  text-align:center;
+}
+
+h4  {
+  text-align: center;
+}
+
+body {
+  font-family: 'Pinyon Script', cursive;
+}
+
+.blog-post {
+  overflow: auto;
+  height: 30em;
+  margin: 1em;
+  border-radius: 5px;
+  -webkit-box-shadow: 17px -3px 46px -15px rgba(0,0,0,0.75);
+  -moz-box-shadow: 17px -3px 46px -15px rgba(0,0,0,0.75);
+  box-shadow: 17px -3px 46px -15px rgba(0,0,0,0.75);
+}
+
+.blog-post2 {
+  @include blog-post;
+}
